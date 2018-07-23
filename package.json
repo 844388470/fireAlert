@@ -1,0 +1,40 @@
+{
+  "name": "react-pc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.dev.config.js",
+    "dev:bin": "cross-env NODE_ENV=development node bin/dev-server",
+    "build:test": "cross-env NODE_ENV=production NODE_PACKTYPE=test webpack --config webpack/webpack.prod.config.js",
+    "build:formal": "cross-env NODE_ENV=production NODE_PACKTYPE=formal webpack --config webpack/webpack.prod.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^3.0.0",
+    "redux": "^3.7.2",
+    "redux-devtools": "^3.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "open-browser-webpack-plugin": "^0.0.5",
+    "postcss-loader": "^2.1.6",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  }
+}
