@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import Index from '../react-redux-demo'
+import Index from '../fireAlert'
 
 export default class Home extends Component {
     render() {

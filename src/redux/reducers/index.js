@@ -1,11 +1,9 @@
-import {createStore,combineReducers } from "redux";
+import {combineReducers } from "redux";
 import * as aX from './a_x'
 import * as bX from './b_x'
 
 
-const rootReducer = combineReducers({
+export default combineReducers({
     ...aX,
     ...bX,
 })
-
-export default rootReducer

@@ -10,6 +10,7 @@ module.exports = {
     context: path.resolve(__dirname, '../'),
     entry: {
         'app':'./src/index.js', //指定入口文件，程序从这里开始编译,__dirname当前所在目录, ../表示上一级目录, ./同级目录
+        'vendor': ['react','react-dom','react-redux','react-router','redux-devtools','axios','socket.io-client'],
     },
     output: {
         path: config.build.assetsRoot,      // 输出的路径
@@ -52,5 +53,5 @@ module.exports = {
                 ]
             }
         ]
-    }  
+    },
 }

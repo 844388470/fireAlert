@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import Routes from '@/router/router';
 import store from '@/redux/store';
 require('./style/index.css');
-import { addToCart }  from './redux/actions/a_x';
+// import { addToCart }  from './redux/actions/a_x';
 
 // let unsubscribe = store.subscribe(() =>                    //监听dispatch的调用
 //   console.log(store.getState())

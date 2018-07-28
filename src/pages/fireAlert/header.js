@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
 class Title extends Component {
     // static contextTypes = {
@@ -21,18 +21,18 @@ class Title extends Component {
     // }
     render () {
       return (
-        <h1 style={{ color: this.props.colorReducer }}>React.js 小书标题</h1>
+        <div style={{ lineHeight:'8vh',fontSize:'26px',fontWeight:'bold',color:'#fff' }}>Rinlink 烟雾报警</div>
       )
     }
   }
 
-  const mapStateToProps = (state) => {
-    console.log(state)
-    return {
-      colorReducer: state.colorReducer
-    }
-  }
-  Title = connect(mapStateToProps)(Title)
+  // const mapStateToProps = (state) => {
+  //   console.log(state)
+  //   return {
+  //     colorReducer: state.colorReducer
+  //   }
+  // }
+  // Title = connect(mapStateToProps)(Title)
 
 
 export default Title;

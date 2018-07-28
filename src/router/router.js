@@ -3,6 +3,7 @@ import { Router, Route, hashHistory,IndexRedirect } from 'react-router'
 import App from '../App'
 import * as Index from '../pages/index'
 import navkeep from '../pages/navkeep'
+// require('../mock/index.js')
 
 
 function onEntry(e,replace,back){               //拦截
@@ -23,11 +24,11 @@ export default () => (                          //路由
         <Route path="/" component={App} onEnter={onEntry}>
             <IndexRedirect to="home"/>
             <Route path="/home" component={Index.home} />
-            <Route path="/a" component={navkeep.a} />
+            {/* <Route path="/a" component={navkeep.a} />
             <Route path="/b" component={navkeep.b} />
-            <Route path="/c" component={navkeep.c} />
+            <Route path="/c" component={navkeep.c} /> */}
         </Route>
-        <Route path="/login" component={Index.login} />
-        <Route path="*" component={Index.errors} />
+        {/* <Route path="/login" component={Index.login} />
+        <Route path="*" component={Index.errors} /> */}
     </Router>
 )

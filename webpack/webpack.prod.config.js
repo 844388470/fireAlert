@@ -1,5 +1,4 @@
 'use strict'
-const path = require('path')
 const utils = require('./utils')
 const webpack = require('webpack')
 const config = require('../config')
@@ -26,7 +25,19 @@ module.exports = merge(baseWebpackConfig, {
         inject: true,
         title: '项目',
         path: config.build.assetsPublicPath + config.build.assetsSubDirectory
-      })
-    ]
+      }),
+      new webpack.optimize.ModuleConcatenationPlugin(),
+    ],
+    optimization: {
+      splitChunks: {
+          cacheGroups: {
+              commons: {
+                  name: "vendor",
+                  chunks: "initial",
+                  minChunks: 2
+              }
+          }
+      },
+    },
   })
   

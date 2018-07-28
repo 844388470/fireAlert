@@ -1,6 +1,6 @@
 module.exports = {
     NODE_ENV: '"production"',
     NODE_PACKTYPE:'"formal"',
-    host: '"https://service.fzgi.cn"'
+    host: '"https://admin.rinklink.com/api"'
   }
   

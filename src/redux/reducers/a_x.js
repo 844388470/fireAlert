@@ -39,3 +39,45 @@ export const colorReducer = function(state='red', action) {
         return state;
     }
 }
+
+const data={
+  list:[],
+  policeNum:0,
+  policeAdd:0,
+  equAdd:0
+}
+
+export const fireData = function(state=data, action) {
+  switch (action.type) {
+      case 'ADD_LIST': {
+        return {
+          ...state,
+          list:action.list
+        }
+      }
+
+      case 'ADD_EQU': {
+        return {
+          ...state,
+          equAdd:action.equAdd
+        }
+      }
+
+      case 'POLICE_NUM': {
+        return {
+          ...state,
+          policeNum:action.policeNum
+        }
+      }
+
+      case 'POLICE_ADD': {
+        return {
+          ...state,
+          policeAdd:action.policeAdd
+        }
+      }
+
+      default:
+        return state;
+    }
+}
