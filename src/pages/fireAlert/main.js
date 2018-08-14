@@ -219,7 +219,7 @@ class Content extends Component {
     }
 
     websocket=()=>{
-        const socket = io.connect('https://api.rinlink.com');
+        const socket = io.connect('https://admin.rinlink.com');
 
         socket.on('GN201D-Warning', msg => {
         //监听事件
